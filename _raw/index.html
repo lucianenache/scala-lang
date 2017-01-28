@@ -121,7 +121,7 @@
 				</div>
 				<ul>
 					<li>
-						<a class="masterTooltip" title="Here is a very nice link." href="#">
+						<a href="#" title="That&apos;s what this widget is">
 							<span class="bullet">
 								<img src="resources/img/frontpage/icon-ensime.png" alt="">
 							</span>
@@ -922,11 +922,12 @@ println("Meanwhile, the main thread goes on!")</code></pre>
 			</div>
 			<div class="site-footer-bottom">
 				<p>Copyright © 2002-2016 École Polytechnique Fédérale <br>Lausanne (EPFL) Lausanne, Switzerland</p>
-				<img src="resources/img/frontpage/scala-logo-white.png" alt="">
+				<img src="resources/img/frontpage/scala-logo-white@2x.png" alt="">
 			</div>
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="resources/js/unslider.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/scala.min.js" type="text/javascript"></script>
@@ -939,6 +940,11 @@ println("Meanwhile, the main thread goes on!")</code></pre>
 			});
 		});
 	</script>
+	<script>
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
 </body>
 
 </html>

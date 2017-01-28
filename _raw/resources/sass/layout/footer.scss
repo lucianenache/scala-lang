@@ -57,6 +57,11 @@
       @include align-items(center);
       @include justify-content(space-between);
 
+      img {
+        width: 104px;
+        height: auto;
+      }
+
       @include bp(small) {
         @include justify-content(flex-start);
         flex-wrap: wrap;

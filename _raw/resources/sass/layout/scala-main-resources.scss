@@ -3,7 +3,7 @@
 //------------------------------------------------
 
 .scala-main-resources {
-    height: 177px;
+    height: 230px;
     background: $gray-darker;
     position: relative;
 
@@ -128,6 +128,13 @@
                     font-size: 1.9rem;
                     margin-top: -10px;
                   }
+                  p {
+                    color: rgba(#fff, 0.50);
+                    font-style: italic;
+                    font-size: $font-size-medium;
+                    line-height: 1.3;
+                    margin-top: 10px;
+                  }
                 }
             }
         }
@@ -138,7 +145,7 @@
 
         .resources {
             .download {
-                margin-top: 140px;
+                margin-top: 180px;
             }
 
             .api-docs {
