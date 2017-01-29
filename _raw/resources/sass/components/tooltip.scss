@@ -1,0 +1,13 @@
+// MAINTENANCE
+//------------------------------------------------
+//------------------------------------------------
+
+.tooltip {
+	display:none;
+	position:absolute;
+	background-color: rgba($gray-darker, 0.95);
+	border-radius: $border-radius-small;
+	padding: 5px 12px;
+	color: #fff;
+  font-size: $font-size-small;
+}
