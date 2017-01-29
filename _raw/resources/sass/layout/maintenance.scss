@@ -64,7 +64,8 @@
         a {
 
             img {
-
+                height: 42px;
+                width: auto;
                 display: block;
                 opacity: 0.3;
                 transition: $base-transition;
