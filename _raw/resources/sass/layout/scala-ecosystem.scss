@@ -23,10 +23,9 @@
                 margin-top: 10px;
                 @include span-columns(8);
                 @include shift(2);
-
                 @include bp(medium) {
-                  @include span-columns(12);
-                  @include shift(0);
+                     @include span-columns(12);
+                    @include shift(0);
                 }
             }
         }
@@ -54,7 +53,7 @@
                 background: rgba($gray, 0.5);
                 transition: $base-transition;
                 text-align: center;
-                padding: 70px 0 80px 0;
+                padding: 70px 0 80px;
 
                 h2 {
                     color: #fff;
@@ -81,7 +80,6 @@
                         border-radius: $border-radius-small;
                         width: 100%;
                         font-weight: $font-semibold;
-
                     }
                 }
                 @include bp(medium) {
@@ -105,5 +103,35 @@
                 padding-bottom: 140px;
             }
         }
+    }
+
+    .autocomplete-suggestions {
+        border: 1px solid $gray-light;
+        background: #FFF;
+        overflow: auto;
+    }
+
+    .autocomplete-suggestion {
+        padding: 2px 5px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .autocomplete-selected {
+        background: $gray-lighter;
+    }
+
+    .autocomplete-suggestions strong {
+        font-weight: normal;
+        color: $gray-dark;
+    }
+
+    .autocomplete-group {
+        padding: 2px 5px;
+    }
+
+    .autocomplete-group strong {
+        display: block;
+        border-bottom: 1px solid $gray-light;
     }
 }
