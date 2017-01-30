@@ -62,6 +62,10 @@
                         padding-bottom: 4px;
                         margin-bottom: 2px;
                         font-weight: $font-bold;
+
+                        a {
+                          font-size: $font-size-large;
+                        }
                     }
 
                     a {
