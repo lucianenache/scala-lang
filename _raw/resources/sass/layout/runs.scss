@@ -46,5 +46,13 @@
                 }
             }
         }
+
+        p {
+          text-align: center;
+          color: rgba(#fff, 0.6);
+          margin-top: 28px;
+          text-transform: uppercase;
+          font-size: $font-size-small;
+        }
     }
 }
