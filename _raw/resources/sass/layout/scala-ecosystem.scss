@@ -16,18 +16,6 @@
                     background: #234D57;
                 }
             }
-
-            p {
-                font-size: $font-size-large;
-                color: $base-font-color-inverse;
-                margin-top: 10px;
-                @include span-columns(8);
-                @include shift(2);
-                @include bp(medium) {
-                     @include span-columns(12);
-                    @include shift(0);
-                }
-            }
         }
 
         .browser {

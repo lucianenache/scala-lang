@@ -36,6 +36,8 @@
 @import 'layout/maintenance';
 @import 'layout/footer';
 @import 'layout/marker';
+@import 'layout/runs';
+@import 'layout/run-scala';
 
 // COMPONENTS
 //------------------------------------------------
@@ -47,3 +49,4 @@
 @import 'components/card';
 @import 'components/calendar';
 @import 'components/tooltip';
+@import 'components/code';

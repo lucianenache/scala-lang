@@ -68,32 +68,6 @@
                       @include bp(large) {
                         @include span-columns(12);
                       }
-                        .code-element {
-                            margin-bottom: 20px;
-
-                            pre {
-                                margin-top: 0;
-                            }
-
-                            code {
-                                padding: 20px;
-                            }
-
-                            .bar-code {
-                                background: #B4BBBD;
-                                text-align: center;
-                                padding: 2px 0;
-                                font-size: $font-size-small;
-                                font-weight: $font-semibold;
-                                min-height: 26px;
-
-                            }
-
-                            .hljs {
-                              background: rgba($gray-darker, 0.8);
-                            }
-
-                        }
                     }
 
                     .scala-text {

@@ -3,7 +3,7 @@
 //------------------------------------------------
 
 .scala-main-resources {
-    height: 230px;
+    height: 180px;
     background: $gray-darker;
     position: relative;
 
@@ -110,7 +110,7 @@
                 border-radius: 100%;
                 text-align: center;
 
-                img {
+                > img {
                     width: 152px;
                     height: auto;
                     margin-top: -28px;
@@ -128,7 +128,7 @@
                     margin-top: -9px;
                   }
 
-                  span:last-child {
+                  span:nth-child(2) {
                     font-size: 1.9rem;
                     margin-top: -10px;
                   }

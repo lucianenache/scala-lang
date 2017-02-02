@@ -1,0 +1,50 @@
+// RUNS
+//------------------------------------------------
+//------------------------------------------------
+
+#site-main {
+    .runs {
+
+        background: $gray;
+
+        .heading-line {
+            @include clearfix;
+
+            h2 {
+                span {
+                    background: $gray;
+                }
+            }
+        }
+
+        ul {
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(center);
+
+            li {
+                width: 220px;
+                padding: 0 20px;
+                text-align: center;
+
+                &:first-child {
+                    border-right: $base-border-white;
+                }
+
+                img {
+                    height: 64px;
+                    width: 48px;
+                    opacity: 0.3;
+                }
+
+                span {
+                    display: block;
+                    margin-top: 10px;
+                    color: rgba(#fff, 0.6);
+                    font-size: $font-size-small;
+                    font-family: $heading-font-family;
+                }
+            }
+        }
+    }
+}

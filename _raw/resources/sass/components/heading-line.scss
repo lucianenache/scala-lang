@@ -19,6 +19,8 @@
             z-index: 5;
         }
 
+
+
         &:before {
             content: "";
             display: block;
@@ -34,5 +36,17 @@
         font-size: $font-size-small;
         color: $base-font-color-inverse;
         font-style: italic;
+    }
+
+    .lead {
+        font-size: $font-size-large;
+        color: $base-font-color-inverse;
+        margin-top: 10px;
+        @include span-columns(8);
+        @include shift(2);
+        @include bp(medium) {
+             @include span-columns(12);
+            @include shift(0);
+        }
     }
 }
