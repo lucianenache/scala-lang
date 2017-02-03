@@ -4,55 +4,72 @@
 
 #site-main {
     .runs {
-
+        padding: 30px 0;
         background: $gray;
 
-        .heading-line {
-            @include clearfix;
-
-            h2 {
-                span {
-                    background: $gray;
-                }
-            }
+        h2 {
+            color: #fff;
+            text-align: center;
+            font-size: $font-size-large;
         }
 
         ul {
             @include display(flex);
             @include align-items(center);
             @include justify-content(center);
+            margin-top: 30px;
+            li:nth-child(2) {
+              height: 100px;
+              width: 1px;
+              background: $base-border-color-white;
+              margin-left: 36px;
+              margin-right: 36px;
+            }
+            li:nth-child(1),
+            li:nth-child(3) {
+                width: 130px;
+                height: 130px;
+                background: rgba($gray-dark, 0.5);
+                @include border-radius(100%);
+                @include display(flex);
+                @include align-items(center);
+                @include justify-content(center);
 
-            li {
-                width: 220px;
-                padding: 0 20px;
-                text-align: center;
 
-                &:first-child {
-                    border-right: $base-border-white;
-                }
-
-                img {
-                    height: 64px;
-                    width: 48px;
-                    opacity: 0.3;
-                }
 
                 span {
-                    display: block;
-                    margin-top: 10px;
-                    color: rgba(#fff, 0.6);
-                    font-size: $font-size-small;
-                    font-family: $heading-font-family;
+                    background: $gray-dark;
+                    width: 90px;
+                    height: 90px;
+                    @include border-radius(100%);
+                    @include display(flex);
+                    @include align-items(center);
+                    @include justify-content(center);
+
+                    img {
+                        height: 48px;
+                        width: 48px;
+                        opacity: 0.3;
+                        transition: $base-transition;
+                    }
+                }
+
+                &:hover {
+                  span {
+                    img {
+                      opacity: 1;
+                    }
+                  }
                 }
             }
         }
 
         p {
-          text-align: center;
-          color: rgba(#fff, 0.6);
-          margin-top: 28px;
-          text-transform: uppercase;
-          font-size: $font-size-small;
+            text-align: center;
+            color: rgba(#fff, 0.6);
+            margin-top: 28px;
+            text-transform: uppercase;
+            font-size: $font-size-small;
         }
     }
 }

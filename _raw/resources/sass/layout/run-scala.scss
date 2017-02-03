@@ -6,9 +6,10 @@
     .run-scala {
         background: $gray-dark;
         padding-bottom: 0;
+        overflow: hidden;
 
         .code-element {
-            margin-bottom: 0;
+            margin-bottom: -1px;
             margin-top: 48px;
             position: relative;
 
