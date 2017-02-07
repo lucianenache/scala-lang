@@ -2,21 +2,104 @@
 //------------------------------------------------
 //------------------------------------------------
 
-
 .content-primary,
 .table-of-content {
 
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h4 {
-    font-size: 1.125rem;
-    font-family: $base-font-family;
-    text-transform: uppercase;
-  }
+    h2,
+    h3 {
+      font-weight: $font-regular;
+      margin-top: 28px;
+    }
 
+    h2,
+    h3,
+    h4 {
+        color: $headings-font-color;
+    }
+
+    h2 {
+        font-size: 2rem;
+
+    }
+
+    h3 {
+        font-size: 1.625rem;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+        font-family: $base-font-family;
+        text-transform: uppercase;
+        font-weight: $font-bold;
+    }
+}
+
+.content-primary {
+    h2,
+    h3,
+    h4,
+    p,
+    ul {
+        margin-bottom: 18px;
+    }
+
+    ul,
+    ol {
+      padding-left: 18px;
+    }
+
+    ol {
+      li {
+        list-style: decimal;
+      }
+    }
+
+    ul {
+      li {
+        list-style: disc;
+      }
+    }
+
+
+    ul,
+    ol  {
+        li {
+            padding-left: 10px;
+            margin-bottom: 16px;
+
+            ul {
+                margin-top: 18px;
+
+                li {
+                    margin-bottom: 8px;
+                    list-style: circle;
+                    padding-left: 0;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+
+    em {
+      font-style: italic;
+    }
+
+    strong {
+      font-weight: $font-bold;
+    }
+
+    del {
+      text-decoration: line-through;
+    }
+
+    code {
+      padding: 20px;
+      font-size: $font-size-medium;
+    }
 
 }
