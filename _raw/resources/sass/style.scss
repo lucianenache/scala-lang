@@ -20,10 +20,12 @@
 
 // LAYOUT
 //------------------------------------------------
+
+// Home
 @import 'layout/header';
 @import 'layout/inner-text';
 @import 'layout/scala-main-resources';
-@import 'layout/main';
+@import 'layout/site-main';
 @import 'layout/navigation';
 @import 'layout/twitter-feed';
 @import 'layout/ides';
@@ -38,6 +40,13 @@
 @import 'layout/marker';
 @import 'layout/runs';
 @import 'layout/run-scala';
+
+// Inner Page
+@import 'layout/inner-main';
+@import 'layout/title-page';
+@import 'layout/type-md';
+@import 'layout/table-of-content';
+
 
 // COMPONENTS
 //------------------------------------------------

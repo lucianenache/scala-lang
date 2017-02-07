@@ -1,0 +1,56 @@
+// DOCUMENTATION
+//------------------------------------------------
+//------------------------------------------------
+
+#inner-main {
+    .table-of-content {
+        .inner-box {
+            padding-bottom: 0;
+        }
+
+        .documentation {
+            @include clearfix;
+
+            .doc-item {
+                @include span-columns(4);
+                @include omega(3n);
+                margin-bottom: $padding-medium;
+                min-height: 120px;
+                padding: 15px;
+
+                @include bp(large) {
+                  @include span-columns(12);
+                  min-height: auto;
+                }
+
+                .doc-item-header {
+                    @include display(flex);
+                    @include align-items(center);
+                    @include justify-content(flex-start);
+                    margin-bottom: 10px;
+
+                    .fa {
+                        font-size: 1.563rem;
+                        margin-right: 14px;
+                        color: $brand-primary;
+                    }
+
+                    h4 {
+                        color: $headings-font-color;
+                    }
+                }
+
+                .doc-item-main {
+                    p {
+                        color: $base-font-color;
+                    }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    background: $gray-lighter;
+                }
+            }
+        }
+    }
+}

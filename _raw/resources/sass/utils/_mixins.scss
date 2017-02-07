@@ -49,8 +49,8 @@
     }
 }
 
-
 // Border
+//------------------------------------------------
 @mixin border-radius($radius) {
   border-radius: $radius;
   -webkit-border-radius: $radius;
@@ -60,8 +60,7 @@
 }
 
 // User select
-
-
+//------------------------------------------------
 @mixin no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -69,4 +68,13 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+
+// Box Shadow
+//------------------------------------------------
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+     -moz-box-shadow: $params;
+          box-shadow: $params;
 }

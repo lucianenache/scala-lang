@@ -85,4 +85,7 @@ $base-duration: 350ms;
 $base-timing: ease;
 $base-transition: all $base-duration $base-timing;
 
+
 $box-shadow-item: rgba($gray-darker, 0.20) 0 1px 12px;
+$box-shadow-inner: rgba($gray-darker, 0.04) 0 2px 1px;
+$text-shadow: rgba($gray-darker, 0.10) 2px 2px 0;
