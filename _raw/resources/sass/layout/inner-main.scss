@@ -1,29 +1,42 @@
 // INNER MAIN
 //------------------------------------------------
 //------------------------------------------------
+
 #inner-main {
-  background: $gray-lighter;
-  padding-bottom: $padding-xlarge;
+    background: $gray-lighter;
+    padding-bottom: $padding-xlarge;
 
-  section:nth-child(2) {
-    margin-top: -80px;
-  }
-
-  .inner-box {
-    padding: $padding-medium;
-    background: #fff;
-    @include border-radius($border-radius-base);
-    @include box-shadow($box-shadow-inner);
-  }
-
-  .content {
-    .content-primary {
-      @include span-columns(9);
-    }
-    .content-nav {
-      @include span-columns(3);
+    section:nth-child(2) {
+        margin-top: -80px;
     }
 
-  }
+    .inner-box {
+        padding: $padding-medium;
+        background: #fff;
+        @include border-radius($border-radius-base);
+        @include box-shadow($box-shadow-inner);
+    }
 
+    .content {
+        .content-primary {
+            @include span-columns(9);
+        }
+
+        .content-nav {
+            @include span-columns(3);
+
+            h5 {
+                font-size: 1.25rem;
+                color: $headings-font-color;
+            }
+
+            ul {
+                li {
+                  ul {
+                    padding-left: 14px;
+                  }
+                }
+            }
+        }
+    }
 }
