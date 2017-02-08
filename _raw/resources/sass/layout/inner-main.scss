@@ -47,7 +47,7 @@
                         ul {
                             margin: 5px 0;
                             padding-left: 16px;
-                            color: $base-font-color-light;
+                            color: rgba($base-font-color-light, 0.7);
 
                             li {
                                 font-size: $font-size-medium;
@@ -64,6 +64,10 @@
                             }
                         }
                     }
+                }
+
+                hr {
+
                 }
             }
         }
