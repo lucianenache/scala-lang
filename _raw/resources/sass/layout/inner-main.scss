@@ -27,21 +27,39 @@
 
             h5 {
                 font-size: 1.25rem;
+                margin-bottom: 12px;
                 color: $headings-font-color;
             }
 
-            ul {
-                li {
-                    ul {
-                        padding-left: 16px;
+            .inner-box {
+                & > ul {
+                    & > li {
+                        & > a {
+                            color: $gray-dark;
 
-                        li {
-                            font-size: $font-size-small;
-                            list-style: disc;
+                            &:active,
+                            &:focus,
+                            &:hover {
+                                color: $hover-link-color;
+                            }
+                        }
 
-                            ul {
-                                li {
-                                    list-style: circle;
+                        ul {
+                            margin: 5px 0;
+                            padding-left: 16px;
+                            color: $base-font-color-light;
+
+                            li {
+                                font-size: $font-size-medium;
+                                list-style: disc;
+                                margin-bottom: -2px;
+
+                                ul {
+                                    li {
+                                        list-style: circle;
+                                        font-style: italic;
+                                        font-size: $font-size-small;
+                                    }
                                 }
                             }
                         }
