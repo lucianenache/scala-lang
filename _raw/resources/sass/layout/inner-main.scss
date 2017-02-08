@@ -32,9 +32,20 @@
 
             ul {
                 li {
-                  ul {
-                    padding-left: 14px;
-                  }
+                    ul {
+                        padding-left: 16px;
+
+                        li {
+                            font-size: $font-size-small;
+                            list-style: disc;
+
+                            ul {
+                                li {
+                                    list-style: circle;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
