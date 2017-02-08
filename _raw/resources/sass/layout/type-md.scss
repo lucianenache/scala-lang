@@ -34,16 +34,19 @@
 
 .content-primary {
     h2 {
+        margin-bottom: 24px;
         border-bottom: $base-border-gray;
         padding-bottom: 8px;
     }
 
-    h2,
     h3,
     h4,
     p,
     pre,
-    ul {
+    ul,
+    table,
+    img,
+    blockquote  {
         margin-bottom: 18px;
     }
 
@@ -132,5 +135,22 @@
           border-bottom: $base-border-gray;
           padding: 6px 0;
         }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    blockquote {
+      margin: 0 0 18px 0;;
+      padding: 20px;
+      border: 2px dashed $base-border-color-gray;
+      font-size: $font-size-large;
+      font-style: italic;
+      @include border-radius($border-radius-base);
+      p {
+        margin: 0;
+      }
     }
 }
