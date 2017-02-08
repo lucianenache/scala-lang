@@ -20,6 +20,27 @@
     .content {
         .content-primary {
             @include span-columns(9);
+            .documentation,
+            .tools {
+                .doc-item,
+                .tool-item {
+                    transition: $base-transition;
+                    @include span-columns(6);
+                    @include omega(2n);
+
+                    a {
+                        &:active,
+                        &:focus,
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    &:nth-child(2n) {
+                        clear: none;
+                    }
+                }
+            }
         }
 
         .content-nav {

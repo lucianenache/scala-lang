@@ -48,6 +48,8 @@
             p {
                 color: $base-font-color;
             }
+
+            
         }
 
         &:active,
@@ -55,28 +57,6 @@
         &:hover {
             text-decoration: none;
             background: $gray-lighter;
-        }
-    }
-}
-
-.content-primary {
-    .documentation {
-        .doc-item {
-            transition: $base-transition;
-            @include span-columns(6);
-            @include omega(2n);
-
-            a {
-                &:active,
-                &:focus,
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-
-            &:nth-child(2n) {
-                clear: none;
-            }
         }
     }
 }
