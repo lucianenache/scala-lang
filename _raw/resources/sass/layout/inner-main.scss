@@ -44,21 +44,27 @@
                             }
                         }
 
-                        ul {
+                        & > ul {
                             margin: 5px 0;
-                            padding-left: 16px;
+                            padding-left: 14px;
                             color: rgba($base-font-color-light, 0.7);
+                            border-left: $base-border-gray;
 
                             li {
                                 font-size: $font-size-medium;
-                                list-style: disc;
                                 margin-bottom: -2px;
 
                                 ul {
                                     li {
-                                        list-style: circle;
-                                        font-style: italic;
                                         font-size: $font-size-small;
+
+                                        &:before {
+                                            color: rgba($base-font-color-light, 0.5);
+                                            padding-left: 0;
+                                            margin-right: 6px;
+                                            content: "\2192";
+
+                                        }
                                     }
                                 }
                             }
@@ -66,9 +72,7 @@
                     }
                 }
 
-                hr {
-
-                }
+                hr {}
             }
         }
     }

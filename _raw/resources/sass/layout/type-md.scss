@@ -12,7 +12,8 @@
 
     h2,
     h3,
-    h4 {
+    h4,
+    h5 {
         color: $headings-font-color;
         font-weight: $font-bold;
     }
@@ -25,7 +26,8 @@
         font-size: 1.5rem;
     }
 
-    h4 {
+    h4,
+    h5 {
         font-size: 1.063rem;
         font-family: $base-font-family;
         text-transform: uppercase;
@@ -42,6 +44,7 @@
 
     h3,
     h4,
+    h5,
     p,
     pre,
     ul,
