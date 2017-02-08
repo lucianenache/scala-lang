@@ -62,7 +62,7 @@
 						<a href="#" class="doc-item">
 							<div class="doc-item-header">
 								<i class="fa fa-rocket"></i>
-								<h5>Getting Started</h5>
+								<h4>Getting Started</h4>
 							</div>
 							<div class="doc-item-main">
 								<p>Install Scala on your computer and start writing some Scala code!</p>
@@ -72,7 +72,7 @@
 						<a href="#" class="doc-item">
 							<div class="doc-item-header">
 								<i class="fa fa-file-text"></i>
-								<h5>Overviews/Guides</h5>
+								<h4>Overviews/Guides</h4>
 							</div>
 							<div class="doc-item-main">
 								<p>Access detailed documentation on important language features.</p>
@@ -82,7 +82,7 @@
 						<a href="#" class="doc-item">
 							<div class="doc-item-header">
 								<i class="fa fa-database"></i>
-								<h5>Api</h5>
+								<h4>Api</h4>
 							</div>
 							<div class="doc-item-main">
 								<p>Dive straight into the API.</p>
@@ -92,7 +92,7 @@
 						<a href="#" class="doc-item">
 							<div class="doc-item-header">
 								<i class="fa fa-flag"></i>
-								<h5>Specification</h5>
+								<h4>Specification</h4>
 							</div>
 							<div class="doc-item-main">
 								<p>Get an in-depth overview of the language.</p>
@@ -102,7 +102,7 @@
 						<a href="#" class="doc-item">
 							<div class="doc-item-header">
 								<i class="fa fa-list-alt"></i>
-								<h5>Cheatsheets</h5>
+								<h4>Cheatsheets</h4>
 							</div>
 							<div class="doc-item-main">
 								<p>Access language constructs quickly.</p>
@@ -122,7 +122,7 @@
 						<a href="#" class="doc-item">
 							<div class="doc-item-header">
 								<i class="fa fa-book"></i>
-								<h5>Tutorials</h5>
+								<h4>Tutorials</h4>
 							</div>
 							<div class="doc-item-main">
 								<p>Digest bite-size pieces of the essentials.</p>
@@ -132,7 +132,7 @@
 						<a href="#" class="doc-item">
 							<div class="doc-item-header">
 								<i class="fa fa-search"></i>
-								<h5>Glossary</h5>
+								<h4>Glossary</h4>
 							</div>
 							<div class="doc-item-main">
 								<p>Understand Scala's vocabulary.</p>
@@ -147,12 +147,14 @@
 			<div class="wrap">
 				<div class="content-primary">
 					<div class="inner-box">
+
 						<h2>Title header h2</h2>
 						<p>Lorem ipsum dolor sit amet, elit. Dolorum suscipit sed porro similique explicabo. Totam accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum suscipit sed porro similique explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
 						<h3>Title header h3</h3>
 						<p>Lorem ipsum dolor sit amet, <code>consectetur adipisicing</code> elit. Dolorum suscipit sed <code>porro similique</code> explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium
-							voluptatum!</p>
+							voluptatum!
+						</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum suscipit sed porro similique explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
 						<h4>Title header h4</h4>
 						<p>Lorem ipsum dolor sit amet, elit. Dolorum suscipit sed porro similique explicabo. Totam accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
@@ -192,11 +194,11 @@
 						</ul>
 						<h2>Code</h2>
 						<p>Lem ipsum dolor sit amet, <code>consectetur</code> adipisicing </p>
-										<pre><code>val x = future { someExpensiveComputation() }
-val y = future { someOtherExpensiveComputation() }
-val z = for (a &lt;- x; b &lt;- y) yield a*b
-for (c &lt;- z) println("Result: " + c)
-println("Meanwhile, the main thread goes on!")</code></pre>
+						<pre><code>object HelloWorld {
+  def main(args: Array[String]): Unit = {
+    println(“Hello, world!”)
+  }
+}</code></pre>
 										<h2>Table</h2>
 										<table>
 											<thead>
@@ -230,6 +232,124 @@ println("Meanwhile, the main thread goes on!")</code></pre>
 										<blockquote>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit perspiciatis et ullam veritatis unde ea totam repellendus minus, necessitatibus, voluptates tempore animi expedita! Ratione eveniet minus voluptatum saepe excepturi dolorum.</p>
 										</blockquote>
+										<h2>Contributing guide</h2>
+										<div class="documentation">
+											<a href="#" class="doc-item">
+												<div class="doc-item-header">
+													<i class="fa fa-gear"></i>
+													<h4>Scala Internals</h4>
+												</div>
+												<div class="doc-item-main">
+													<p>Get a peek into the inners of the Scala compiler.</p>
+												</div>
+											</a>
+
+											<a href="#" class="doc-item">
+												<div class="doc-item-header">
+													<i class="fa fa-check"></i>
+													<h4>Report an issue</h4>
+												</div>
+												<div class="doc-item-main">
+													<p>File a bug report or a feature request.</p>
+												</div>
+											</a>
+
+											<a href="#" class="doc-item">
+												<div class="doc-item-header">
+													<i class="fa fa-comments"></i>
+													<h4>Community issues</h4>
+												</div>
+												<div class="doc-item-main">
+													<p>Get cracking on some easy to approach issues.</p>
+												</div>
+											</a>
+
+											<a href="#" class="doc-item">
+												<div class="doc-item-header">
+													<i class="fa fa-code"></i>
+													<h4>Hacker's guide</h4>
+												</div>
+												<div class="doc-item-main">
+													<p>Learn to write good code and improve your chances of contributing to the Scala galaxy.</p>
+												</div>
+											</a>
+										</div>
+										<h2>Contribute</h2>
+										<div class="documentation">
+
+											<div class="doc-item">
+												<div class="doc-item-header">
+														<i class="fa fa-file-text"></i>
+														<a href="#">
+														<h4>Documentation</h4>
+													</a>
+												</div>
+												<div class="doc-item-main">
+													<p><a href="#">Scaladoc (API)</a>, <a href="#">docs.scala-lang.org</a> <a href="#">and scala-lang.org.</a></p>
+												</div>
+											</div>
+
+											<div class="doc-item">
+												<div class="doc-item-header">
+														<i class="fa fa-pencil"></i>
+														<a href="#">
+														<h4>Bug Fixes</h4>
+													</a>
+												</div>
+												<div class="doc-item-main">
+													<p>Issues with the tools, core libraries and compiler. Also you can help us by <a href="#">reporting bug</a></p>
+												</div>
+											</div>
+
+											<div class="doc-item">
+												<div class="doc-item-header">
+														<i class="fa fa fa-eye"></i>
+														<a href="#">
+														<h4>Code Reviews</h4>
+													</a>
+												</div>
+												<div class="doc-item-main">
+													<p>Issues with the tools, core libraries and compiler. Also you can help us by reporting</p>
+												</div>
+											</div>
+
+											<div class="doc-item">
+												<div class="doc-item-header">
+														<i class="fa fa-clipboard"></i>
+														<a href="#">
+														<h4>Core Libraries</h4>
+													</a>
+												</div>
+												<div class="doc-item-main">
+													<p>Issues with the tools, core libraries and compiler. Also you can help us by reporting</p>
+												</div>
+											</div>
+
+											<div class="doc-item">
+												<div class="doc-item-header">
+														<i class="fa fa-terminal"></i>
+														<a href="#">
+														<h4>IDE and Build Tools</h4>
+													</a>
+												</div>
+												<div class="doc-item-main">
+													<p>Enhance the Scala tools with features for build tools, IDE plug-ins and other related projects.</p>
+												</div>
+											</div>
+
+											<div class="doc-item">
+												<div class="doc-item-header">
+														<i class="fa fa-gears"></i>
+														<a href="#">
+														<h4>Compiler/Language</h4>
+													</a>
+												</div>
+												<div class="doc-item-main">
+													<p>Enhance the Scala tools with features for build tools, IDE plug-ins and other related projects.</p>
+												</div>
+											</div>
+										</div>
+
 					</div>
 				</div>
 				<div class="content-nav">

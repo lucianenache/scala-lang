@@ -4,55 +4,78 @@
 
 #inner-main {
     .table-of-content {
-      margin-bottom: $padding-medium;
+        margin-bottom: $padding-medium;
+
         .inner-box {
             padding-bottom: 0;
         }
+    }
+}
 
-        .documentation {
-            @include clearfix;
+.documentation {
+    @include clearfix;
 
-            .doc-item {
-                @include span-columns(4);
-                @include omega(3n);
-                margin-bottom: $padding-medium;
-                min-height: 120px;
-                padding: 15px;
+    .doc-item {
+        @include span-columns(4);
+        @include omega(3n);
+        margin-bottom: $padding-medium;
+        min-height: 120px;
+        padding: 15px;
+        @include bp(large) {
+             @include span-columns(12);
+            min-height: auto;
+        }
 
-                @include bp(large) {
-                  @include span-columns(12);
-                  min-height: auto;
-                }
+        .doc-item-header {
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(flex-start);
+            margin-bottom: 10px;
 
-                .doc-item-header {
-                    @include display(flex);
-                    @include align-items(center);
-                    @include justify-content(flex-start);
-                    margin-bottom: 10px;
+            .fa {
+                font-size: 1.563rem;
+                margin-right: 14px;
+                color: $brand-primary;
+            }
 
-                    .fa {
-                        font-size: 1.563rem;
-                        margin-right: 14px;
-                        color: $brand-primary;
-                    }
+            h4 {
+                color: $headings-font-color;
+                margin-bottom: 0;
+            }
+        }
 
-                    h5 {
-                        color: $headings-font-color;
-                    }
-                }
+        .doc-item-main {
+            p {
+                color: $base-font-color;
+            }
+        }
 
-                .doc-item-main {
-                    p {
-                        color: $base-font-color;
-                    }
-                }
+        &:active,
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            background: $gray-lighter;
+        }
+    }
+}
 
-                &:hover,
+.content-primary {
+    .documentation {
+        .doc-item {
+            transition: $base-transition;
+            @include span-columns(6);
+            @include omega(2n);
+
+            a {
                 &:active,
-                &:focus {
+                &:focus,
+                &:hover {
                     text-decoration: none;
-                    background: $gray-lighter;
                 }
+            }
+
+            &:nth-child(2n) {
+                clear: none;
             }
         }
     }
