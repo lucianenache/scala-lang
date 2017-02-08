@@ -32,38 +32,39 @@
             }
 
             .inner-box {
-                & > ul {
-                    & > li {
-                        & > a {
-                            color: $gray-dark;
+                .inner-toc {
+                    & > ul {
+                        & > li {
+                            & > a {
+                                color: $gray-dark;
 
-                            &:active,
-                            &:focus,
-                            &:hover {
-                                color: $hover-link-color;
+                                &:active,
+                                &:focus,
+                                &:hover {
+                                    color: $hover-link-color;
+                                }
                             }
-                        }
 
-                        & > ul {
-                            margin: 5px 0;
-                            padding-left: 14px;
-                            color: rgba($base-font-color-light, 0.7);
-                            border-left: $base-border-gray;
+                            & > ul {
+                                margin: 5px 0;
+                                padding-left: 14px;
+                                color: rgba($base-font-color-light, 0.7);
+                                border-left: $base-border-gray;
 
-                            li {
-                                font-size: $font-size-medium;
-                                margin-bottom: -2px;
+                                li {
+                                    font-size: $font-size-medium;
+                                    margin-bottom: -2px;
 
-                                ul {
-                                    li {
-                                        font-size: $font-size-small;
+                                    ul {
+                                        li {
+                                            font-size: $font-size-small;
 
-                                        &:before {
-                                            color: rgba($base-font-color-light, 0.5);
-                                            padding-left: 0;
-                                            margin-right: 6px;
-                                            content: "\2192";
-
+                                            &:before {
+                                                color: rgba($base-font-color-light, 0.5);
+                                                padding-left: 0;
+                                                margin-right: 6px;
+                                                content: "\2192";
+                                            }
                                         }
                                     }
                                 }
@@ -73,28 +74,30 @@
                 }
 
                 hr {
-                  border: none;
-                  height: 1px;
-                  width: 60px;
-                  background: $base-border-color-gray;
-                  margin: 18px 0;
+                    border: none;
+                    height: 1px;
+                    width: 60px;
+                    background: $base-border-color-gray;
+                    margin: 18px 0;
                 }
 
                 .help-us {
-                  line-height: 1.1;
-                  a {
-                    font-size: $font-size-xsmall;
-                    background: rgba($brand-tertiary, 0.15);
-                    &:active,
-                    &:focus,
-                    &:hover {
-                      text-decoration: none;
-                    }
+                    line-height: 1.1;
 
-                    br {
-                      height: 5px;
+                    a {
+                        font-size: $font-size-xsmall;
+                        background: rgba($brand-tertiary, 0.15);
+
+                        &:active,
+                        &:focus,
+                        &:hover {
+                            text-decoration: none;
+                        }
+
+                        br {
+                            height: 5px;
+                        }
                     }
-                  }
                 }
             }
         }
