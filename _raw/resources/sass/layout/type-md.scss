@@ -16,6 +16,16 @@
     h5 {
         color: $headings-font-color;
         font-weight: $font-bold;
+
+        a {
+          color: $headings-font-color;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: $brand-primary;
+          }
+        }
     }
 
     h2 {
@@ -156,4 +166,6 @@
         margin: 0;
       }
     }
+
+
 }
