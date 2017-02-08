@@ -151,7 +151,7 @@
 						<p>Lorem ipsum dolor sit amet, elit. Dolorum suscipit sed porro similique explicabo. Totam  accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum suscipit sed porro similique explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
 						<h3>Title header h3</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum suscipit sed porro similique explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
+						<p>Lorem ipsum dolor sit amet, <code>consectetur adipisicing</code> elit. Dolorum suscipit sed <code>porro similique</code> explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum suscipit sed porro similique explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
 						<h4>Title header h4</h4>
 						<p>Lorem ipsum dolor sit amet, elit. Dolorum suscipit sed porro similique explicabo. Totam  accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit. Ex maiores accusantium voluptatum!</p>
@@ -165,7 +165,7 @@
 						<ol>
 							<li>Sit amet, consectetur adipisicing elit. Dolorum suscipit sed porro similique explicabo. Totam sed repudiandae nostrum accusamus qui et expedita, dolorum, ducimus excepturi reprehenderit.
 								<ul>
-									<li>lue explicabo. Totam sed repudiandae nostrum</li>
+									<li>lue explicabo. Totam <code>sded repudiandae</code nostrum</li>
 									<li>lue explicabo. Totam sed repudiandae nostrum</li>
 									<li>lue explicabo. Totam sed repudiandae nostrum</li>
 									<li>lue explicabo. Totam sed repudiandae nostrum</li>
@@ -190,11 +190,39 @@
 							<li>Lem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum </li>
 						</ul>
 						<h2>Code</h2>
+						<p>Lem ipsum dolor sit amet, <code>consectetur</code> adipisicing </p>
 						<pre><code>val x = future { someExpensiveComputation() }
 val y = future { someOtherExpensiveComputation() }
 val z = for (a &lt;- x; b &lt;- y) yield a*b
 for (c &lt;- z) println("Result: " + c)
 println("Meanwhile, the main thread goes on!")</code></pre>
+						<h2>Table</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Title 01</th>
+									<th>Title 02</th>
+									<th>Title 03</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Content 01</td>
+									<td>Content 02</td>
+									<td>Content 03</td>
+								</tr>
+								<tr>
+									<td>Content 01</td>
+									<td>Content 02</td>
+									<td>Content 03</td>
+								</tr>
+								<tr>
+									<td>Content 01</td>
+									<td>Content 02</td>
+									<td>Content 03</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 				<div class="content-nav">

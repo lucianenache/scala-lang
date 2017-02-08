@@ -4,11 +4,10 @@
 
 .content-primary,
 .table-of-content {
-
     h2,
     h3 {
-      font-weight: $font-regular;
-      margin-top: 28px;
+        font-weight: $font-regular;
+        margin-top: 28px;
     }
 
     h2,
@@ -19,7 +18,6 @@
 
     h2 {
         font-size: 2rem;
-
     }
 
     h3 {
@@ -35,34 +33,39 @@
 }
 
 .content-primary {
+    h2 {
+        border-bottom: $base-border-gray;
+        padding-bottom: 8px;
+    }
+
     h2,
     h3,
     h4,
     p,
+    pre,
     ul {
         margin-bottom: 18px;
     }
 
-    ul,
-    ol {
-      padding-left: 18px;
+    ol,
+    ul {
+        padding-left: 18px;
     }
 
     ol {
-      li {
-        list-style: decimal;
-      }
+        li {
+            list-style: decimal;
+        }
     }
 
     ul {
-      li {
-        list-style: disc;
-      }
+        li {
+            list-style: disc;
+        }
     }
 
-
-    ul,
-    ol  {
+    ol,
+    ul {
         li {
             padding-left: 10px;
             margin-bottom: 16px;
@@ -83,23 +86,51 @@
         }
     }
 
-
-
     em {
-      font-style: italic;
+        font-style: italic;
     }
 
     strong {
-      font-weight: $font-bold;
+        font-weight: $font-bold;
     }
 
     del {
-      text-decoration: line-through;
+        text-decoration: line-through;
     }
 
-    code {
-      padding: 20px;
-      font-size: $font-size-medium;
+    p,
+    li {
+      code {
+        @include border-radius($border-radius-small);
+        font-size: $font-size-medium;
+        background: $gray-lighter;
+        color: $base-font-color-light;
+        padding: 0 6px;
+        margin: 0 4px;
+      }
     }
 
+    pre {
+      margin-bottom: 36px;
+      code {
+          padding: 20px;
+          font-size: $font-size-medium;
+          @include border-radius($border-radius-base);
+      }
+    }
+
+    table {
+        width: 100%;
+        text-align: left;
+
+        thead {
+          font-weight: $font-bold;
+        }
+
+        th,
+        td {
+          border-bottom: $base-border-gray;
+          padding: 6px 0;
+        }
+    }
 }
