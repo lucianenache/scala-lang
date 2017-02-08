@@ -72,7 +72,30 @@
                     }
                 }
 
-                hr {}
+                hr {
+                  border: none;
+                  height: 1px;
+                  width: 60px;
+                  background: $base-border-color-gray;
+                  margin: 18px 0;
+                }
+
+                .help-us {
+                  line-height: 1.1;
+                  a {
+                    font-size: $font-size-xsmall;
+                    background: rgba($brand-tertiary, 0.15);
+                    &:active,
+                    &:focus,
+                    &:hover {
+                      text-decoration: none;
+                    }
+
+                    br {
+                      height: 5px;
+                    }
+                  }
+                }
             }
         }
     }
