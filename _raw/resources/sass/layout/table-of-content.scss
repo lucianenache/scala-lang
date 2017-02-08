@@ -41,6 +41,7 @@
             h4 {
                 color: $headings-font-color;
                 margin-bottom: 0;
+                transition: $base-transition;
             }
         }
 
@@ -55,6 +56,7 @@
         &:hover {
             text-decoration: none;
             background: $gray-lighter;
+
         }
     }
 }

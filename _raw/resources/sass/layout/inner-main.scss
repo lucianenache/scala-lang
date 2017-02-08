@@ -32,12 +32,22 @@
                         &:active,
                         &:focus,
                         &:hover {
-                            text-decoration: none;
+                            h4 {
+                              color: $brand-primary;
+                            }
                         }
                     }
 
                     &:nth-child(2n) {
                         clear: none;
+                    }
+
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        text-decoration: none;
+                        background: none;
+
                     }
                 }
             }
