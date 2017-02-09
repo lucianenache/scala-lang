@@ -7,8 +7,11 @@
         margin-bottom: $padding-medium;
 
         .inner-box {
+          &.padding-none {
             padding-bottom: 0;
+          }
         }
+
     }
 }
 
@@ -23,7 +26,7 @@
         padding: 15px;
         @include bp(large) {
              @include span-columns(12);
-             min-height: auto;
+            min-height: auto;
         }
 
         .doc-item-header {
@@ -45,11 +48,11 @@
             }
 
             a {
-              &:active,
-              &:focus,
-              &:hover {
-                text-decoration: none;
-              }
+                &:active,
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
 
@@ -64,25 +67,99 @@
         &:hover {
             text-decoration: none;
             background: $gray-lighter;
-
         }
     }
 }
 
 .community {
-  @include clearfix;
-  .discourse,
-  .gitter {
-    h3 {
-      margin-top: 0;
+    @include clearfix;
+
+    .discourse,
+    .gitter {
+        h3 {
+            margin-top: 0;
+        }
+        @include span-columns(6);
+
+        @include bp(medium) {
+             @include span-columns(12);
+        }
+
+        span {
+            border-bottom: $base-border-gray;
+            display: block;
+            color: $base-font-color-light;
+            font-style: italic;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
+
+        a {
+          &:active,
+          &:focus,
+          &:hover {
+            text-decoration: none;
+            color: $brand-primary;
+
+            h4 {
+              color: $brand-primary;
+            }
+
+          }
+        }
     }
-    @include span-columns(6);
-    span {
-      border-bottom: $base-border-gray;
-      display: block;
-      color: $base-font-color-light;
-      font-style: italic;
-      padding-bottom: 10px;
+    .discourse {
+        ul {
+            li {
+                @include display(flex);
+                @include align-items(top);
+                @include justify-content(flex-start);
+
+                img {
+                  margin-right: 15px;
+                }
+
+                h4 {
+                  margin-bottom: 8px;
+
+                }
+
+                margin-bottom: $padding-large;
+            }
+        }
     }
-  }
+
+    .gitter {
+      ul {
+        li {
+          @include span-columns(3 of 6);
+          @include omega(2n);
+          margin-bottom: 20px;
+
+          @include bp(medium) {
+               @include span-columns(12);
+          }
+
+          a {
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(flex-start);
+
+            img {
+              margin-right: 10px;
+            }
+
+            h4 {
+              text-transform: none;
+            }
+          }
+
+        }
+      }
+    }
 }
