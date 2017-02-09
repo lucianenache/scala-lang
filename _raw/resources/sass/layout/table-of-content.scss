@@ -43,6 +43,14 @@
                 margin-bottom: 0;
                 transition: $base-transition;
             }
+
+            a {
+              &:active,
+              &:focus,
+              &:hover {
+                text-decoration: none;
+              }
+            }
         }
 
         .doc-item-main {
