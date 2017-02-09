@@ -23,7 +23,7 @@
         padding: 15px;
         @include bp(large) {
              @include span-columns(12);
-            min-height: auto;
+             min-height: auto;
         }
 
         .doc-item-header {
@@ -67,4 +67,22 @@
 
         }
     }
+}
+
+.community {
+  @include clearfix;
+  .discourse,
+  .gitter {
+    h3 {
+      margin-top: 0;
+    }
+    @include span-columns(6);
+    span {
+      border-bottom: $base-border-gray;
+      display: block;
+      color: $base-font-color-light;
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+  }
 }
