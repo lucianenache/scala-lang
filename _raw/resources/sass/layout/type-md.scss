@@ -2,9 +2,10 @@
 //------------------------------------------------
 //------------------------------------------------
 
-.content-primary,
-.table-of-content,
 .books,
+.content-primary,
+.content-primary-blog,
+.table-of-content,
 .training-events {
     h2,
     h3 {
@@ -20,18 +21,18 @@
         font-weight: $font-bold;
 
         a {
-          color: $headings-font-color;
+            color: $headings-font-color;
 
-          &:active,
-          &:focus,
-          &:hover {
-            color: $brand-primary;
-          }
+            &:active,
+            &:focus,
+            &:hover {
+                color: $brand-primary;
+            }
         }
     }
 
     h2 {
-        font-size: 1.875rem
+        font-size: 1.875rem;
     }
 
     h3 {
@@ -47,6 +48,15 @@
     }
 }
 
+.content-nav,
+.content-nav-blog {
+    h5 {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+        color: $headings-font-color;
+    }
+}
+
 .content-primary {
     h2 {
         margin-bottom: 24px;
@@ -54,15 +64,15 @@
         padding-bottom: 8px;
     }
 
+    blockquote,
     h3,
     h4,
     h5,
+    img,
     p,
     pre,
-    ul,
     table,
-    img,
-    blockquote  {
+    ul {
         margin-bottom: 18px;
     }
 
@@ -117,25 +127,26 @@
         text-decoration: line-through;
     }
 
-    p,
-    li {
-      code {
-        @include border-radius($border-radius-small);
-        font-size: $font-size-medium;
-        background: $gray-lighter;
-        color: $base-font-color-light;
-        padding: 0 6px;
-        margin: 0 4px;
-      }
+    li,
+    p {
+        code {
+            @include border-radius($border-radius-small);
+            font-size: $font-size-medium;
+            background: $gray-lighter;
+            color: $base-font-color-light;
+            padding: 0 6px;
+            margin: 0 4px;
+        }
     }
 
     pre {
-      margin-bottom: 36px;
-      code {
-          padding: 20px;
-          font-size: $font-size-medium;
-          @include border-radius($border-radius-base);
-      }
+        margin-bottom: 36px;
+
+        code {
+            padding: 20px;
+            font-size: $font-size-medium;
+            @include border-radius($border-radius-base);
+        }
     }
 
     table {
@@ -143,31 +154,30 @@
         text-align: left;
 
         thead {
-          font-weight: $font-bold;
+            font-weight: $font-bold;
         }
 
-        th,
-        td {
-          border-bottom: $base-border-gray;
-          padding: 6px 0;
+        td,
+        th {
+            border-bottom: $base-border-gray;
+            padding: 6px 0;
         }
     }
 
     img {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
 
     blockquote {
-      padding: 20px;
-      border: 2px dashed $base-border-color-gray;
-      font-size: $font-size-large;
-      font-style: italic;
-      @include border-radius($border-radius-base);
-      p {
-        margin: 0;
-      }
+        padding: 20px;
+        border: 2px dashed $base-border-color-gray;
+        font-size: $font-size-large;
+        font-style: italic;
+        @include border-radius($border-radius-base);
+
+        p {
+            margin: 0;
+        }
     }
-
-
 }

@@ -18,8 +18,24 @@
     }
 
     .content {
+
+        .content-primary,
+        .content-primary-blog {
+          @include span-columns(9);
+          @include bp(medium) {
+               @include span-columns(12);
+          }
+        }
+
+        .content-nav,
+        .content-nav-blog {
+          @include span-columns(3);
+          @include bp(medium) {
+               @include span-columns(12);
+          }
+        }
+
         .content-primary {
-            @include span-columns(9);
             .documentation,
             .tools {
                 .doc-item,
@@ -54,13 +70,6 @@
         }
 
         .content-nav {
-            @include span-columns(3);
-
-            h5 {
-                font-size: 1.25rem;
-                margin-bottom: 12px;
-                color: $headings-font-color;
-            }
 
             .inner-box {
                 .inner-toc {

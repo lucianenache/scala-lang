@@ -1,0 +1,31 @@
+// BLOG
+//------------------------------------------------
+//------------------------------------------------
+
+.blog-list {
+
+  .blog-item {
+    display: block;
+    border-bottom: $base-border-gray;
+    padding-bottom: 18px;
+    h2 {
+      margin-bottom: 6px;
+    }
+
+    .blog-date {
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .blog-author {
+      margin-bottom: 12px;
+    }
+    a {
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

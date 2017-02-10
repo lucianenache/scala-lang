@@ -1,0 +1,16 @@
+// TAG
+//------------------------------------------------
+//------------------------------------------------
+.tag-list {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(flex-start);
+  .tag-item {
+    font-size: $font-size-xsmall;
+    background: $gray-lighter;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    color: $base-font-color-light;
+    margin-right: 8px;
+  }
+}
