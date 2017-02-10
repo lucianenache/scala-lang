@@ -1,6 +1,28 @@
 // BLOG
 //------------------------------------------------
 //------------------------------------------------
+.title-page {
+  .content-title-blog {
+    h1 {
+      @include span-columns(9);
+      @include bp(medium) {
+           @include span-columns(12);
+
+      }
+    }
+    .search-container {
+      @include span-columns(3);
+      margin-top: 50px;
+      @include bp(medium) {
+           @include span-columns(12);
+           margin-top: 20px;
+           margin-bottom: 20px;
+      }
+    }
+
+  }
+}
+
 
 .blog-list {
 
