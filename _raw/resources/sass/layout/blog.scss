@@ -51,3 +51,38 @@
     }
   }
 }
+
+.blog-list-nav {
+  margin-top: 18px;
+
+  .blog-list-nav-item {
+    border-bottom: $base-border-gray;
+    padding-bottom: 10px;
+    margin-top: 14px;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    h4 {
+      font-family: $base-font-family;
+
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: $font-size-medium;
+    }
+
+    a {
+      color: $headings-font-color;
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: none;
+        color: $brand-primary;
+      }
+
+    }
+  }
+}
