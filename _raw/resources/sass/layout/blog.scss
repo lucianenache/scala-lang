@@ -86,3 +86,16 @@
     }
   }
 }
+
+.blog-detail-head {
+  border-bottom: $base-border-gray;
+  @include display(flex);
+  @include align-items(flex-start);
+  @include justify-content(space-between);
+  flex-wrap: wrap;
+  padding-bottom: 18px;
+
+  p {
+    margin-bottom: 0;
+  }
+}

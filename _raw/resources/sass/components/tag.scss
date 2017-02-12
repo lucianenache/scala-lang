@@ -6,6 +6,7 @@
   @include align-items(center);
   @include justify-content(flex-start);
   flex-wrap: wrap;
+  padding-left: 0;
   .tag-item {
     font-size: 0.6875rem;
     background: $gray-lighter;
@@ -14,5 +15,6 @@
     color: $base-font-color-light;
     margin-right: 8px;
     margin-bottom: 8px;
+    list-style: none;
   }
 }
