@@ -42,7 +42,8 @@
 
                 &:active,
                 &:focus,
-                &:hover {
+                &:hover,
+                &.active {
                     background: $brand-primary;
                     text-decoration: none;
                 }
