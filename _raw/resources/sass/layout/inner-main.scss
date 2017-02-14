@@ -42,6 +42,12 @@
           }
         }
 
+        .content-nav-blog {
+          @include bp(large) {
+            display: none;
+          }
+        }
+
         .content-primary {
             .documentation,
             .tools {
