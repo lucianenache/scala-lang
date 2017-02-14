@@ -18,20 +18,27 @@
     }
 
     .content {
-
+        .wrap {
+          @include display(flex);
+          flex-wrap: wrap;
+        }
         .content-primary,
         .content-primary-blog {
           @include span-columns(9);
-          @include bp(medium) {
-               @include span-columns(12);
+          @include bp(large) {
+              @include fill-parent;
+               order: 2;
+               margin-right: 0;
           }
         }
 
         .content-nav,
         .content-nav-blog {
           @include span-columns(3);
-          @include bp(medium) {
-               @include span-columns(12);
+          @include bp(large) {
+              @include fill-parent;
+               order: 1;
+               margin-bottom: 30px;
           }
         }
 
@@ -40,9 +47,13 @@
             .tools {
                 .doc-item,
                 .tool-item {
+                    margin-bottom: 0;
                     transition: $base-transition;
                     @include span-columns(6);
                     @include omega(2n);
+                    @include bp(large) {
+                      @include fill-parent;
+                    }
 
                     a {
                         &:active,

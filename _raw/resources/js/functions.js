@@ -35,6 +35,12 @@ $(document).ready(function() {
     });
 });
 
+// SIdebar 
+
+jQuery(document).ready(function($) {
+  $(".sidebar-toc").stick_in_parent();
+});
+
 // Tooltip
 $(document).ready(function() {
         // Tooltip only Text
