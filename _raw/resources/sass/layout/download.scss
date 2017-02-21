@@ -179,8 +179,8 @@
 
     .description {
         position: absolute;
-        left: -120px;
-        top: 80px;
+        left: -130px;
+        top: 60px;
         z-index: 40;
         color: $brand-primary;
         width: 280px;
@@ -189,15 +189,36 @@
         img {
             width: 92px;
             height: 165px;
+            margin-bottom: 24px;
         }
         @include bp(xlarge) {
             display: none;
         }
     }
 
+    .download-intellij {
+      padding-right: 10px;
+      position: relative;
+      .or {
+        font-size: 1.15rem;
+        position: absolute;
+        right: -22px;
+        top: 10px;
+        z-index: 100;
+
+        @include bp(large) {
+            display: none;
+        }
+      }
+    }
+
+    .download-sbt {
+      padding-left: 10px;
+    }
+
     .download-sbt {
         .description {
-            top: 80px;
+            top: 60px;
             left: auto;
             right: -120px;
             text-align: right;
@@ -205,7 +226,7 @@
     }
 
     .bottom-lead {
-        margin-top: 120px;
+        margin-top: 165px;
         @include bp(large) {
           margin-top: 20px;
         }

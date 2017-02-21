@@ -18,7 +18,7 @@
     h4,
     h5 {
         color: $headings-font-color;
-        font-weight: $font-bold;
+        font-weight: $font-regular;
 
         a {
             color: $headings-font-color;
@@ -33,11 +33,11 @@
     }
 
     h2 {
-        font-size: 1.875rem;
+        font-size: 1.75rem;
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     h4,
@@ -49,12 +49,23 @@
     }
 }
 
+.content-primary,
+.content-primary-blog {
+  h2 {
+    color: $brand-primary;
+    a {
+      color: $brand-primary;
+    }
+  }
+}
+
 .content-nav,
 .content-nav-blog {
     h5 {
         font-size: 1.25rem;
         margin-bottom: 12px;
         color: $headings-font-color;
+        font-weight: $font-regular;
     }
 }
 
