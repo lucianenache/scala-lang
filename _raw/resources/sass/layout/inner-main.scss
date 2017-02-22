@@ -92,6 +92,8 @@
                 .inner-toc {
                     & > ul {
                         & > li {
+                          margin-top: 10px;
+                          line-height: 1.2;
                             & > a {
                                 color: $gray-dark;
 
