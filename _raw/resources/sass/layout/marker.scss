@@ -7,12 +7,12 @@
     width: 16px;
     height: 8px;
     background: #A4302E;
-    right: -50px;
-    top: 100px;
+    left: 0px;
+    top: 0px;
     border-radius: 100%;
     cursor: pointer;
 
-    @include bp(large) {
+    @include bp(xlarge) {
       display: none;
     }
 
@@ -60,4 +60,5 @@
             z-index: 1;
         }
     }
+
 }
