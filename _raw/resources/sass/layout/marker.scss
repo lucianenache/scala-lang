@@ -12,7 +12,7 @@
     border-radius: 100%;
     cursor: pointer;
 
-    @include bp(xlarge) {
+    @include bp(xxlarge) {
       display: none;
     }
 
